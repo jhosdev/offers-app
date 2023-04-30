@@ -1,0 +1,25 @@
+{
+  "offers": [
+    {
+      "id": 1,
+      "title": "Project A",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "points": 100,
+      "businessId": 1234
+    },
+    {
+      "id": 2,
+      "title": "Project B",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+      "points": 200,
+      "businessId": 5678
+    },
+    {
+      "id": 3,
+      "title": "Project C",
+      "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "points": 300,
+      "businessId": 9012
+    }
+  ]
+}
