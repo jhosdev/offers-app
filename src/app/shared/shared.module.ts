@@ -8,6 +8,8 @@ import { MaterialModule } from './material.module';
   declarations: [],
   imports: [
     CommonModule,
+  ],
+  exports: [
     MaterialModule,
   ]
 })

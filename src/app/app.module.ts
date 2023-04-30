@@ -1,13 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ToolbarComponent } from './core/components/toolbar/toolbar.component';
 import { HomeComponent } from './core/components/home/home.component';
 
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PageNotFoundComponent } from './core/components/page-not-found/page-not-found.component';
 
+import { AppRoutingModule } from './app-routing.module';
 import { OffersModule } from './features/offers/offers.module';
 import { SharedModule } from './shared/shared.module';
 
@@ -16,16 +17,18 @@ import { SharedModule } from './shared/shared.module';
   declarations: [
     AppComponent,
     ToolbarComponent,
-    HomeComponent
+    HomeComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
+    OffersModule, //child routes have to be before root routes
     AppRoutingModule,
     BrowserAnimationsModule,
-    OffersModule,
-    SharedModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
