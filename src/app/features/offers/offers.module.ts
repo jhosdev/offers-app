@@ -9,6 +9,9 @@ import { NewOfferComponent } from './pages/new-offer/new-offer.component';
 import { EditOfferComponent } from './pages/edit-offer/edit-offer.component';
 
 import { OffersRoutingModule } from './offers-routing.module';
+import { MaterialModule } from 'src/app/shared/material.module';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -22,7 +25,10 @@ import { OffersRoutingModule } from './offers-routing.module';
   ],
   imports: [
     CommonModule,
-    OffersRoutingModule
+    OffersRoutingModule,
+    MaterialModule,
+    HttpClientModule,
+    FormsModule
   ]
 })
 export class OffersModule { }

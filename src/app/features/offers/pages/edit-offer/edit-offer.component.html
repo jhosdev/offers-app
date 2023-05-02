@@ -1,1 +1,9 @@
 <p>edit-offer works!</p>
+
+<div *ngIf="offer$ | async as offer">
+    <h3>{{ offer.title }}</h3>
+    <p>Id: {{ offer.id }}</p>
+    <label for="offer-title">Offer title: </label>
+    <input type="text" id="offer-title" [(ngModel)]="offer.title" placeholder="title"/>
+    <button type="button" (click)="gotoOffers(offer)">Back</button>
+  </div>
