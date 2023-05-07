@@ -1,1 +1,50 @@
-<p>new-offer works!</p>
+<div class="center">
+  <form [formGroup]="offerForm">
+    <mat-form-field>
+      <mat-label>Id</mat-label>
+      <input type="number" matInput placeholder="0" formControlName="id"
+    /></mat-form-field>
+    <mat-form-field>
+      <mat-label>Título</mat-label>
+      <input
+        matInput
+        placeholder="Título"
+        name="title"
+        required
+        formControlName="title"
+    /></mat-form-field>
+    <mat-form-field>
+      <mat-label>Descripción</mat-label>
+      <input
+        type="text"
+        matInput
+        placeholder="Descripción"
+        name="description"
+        formControlName="description"
+    /></mat-form-field>
+    <mat-form-field>
+      <mat-label>Puntos</mat-label>
+      <input
+        type="number"
+        matInput
+        placeholder="0"
+        name="points"
+        required
+        formControlName="points"
+    /></mat-form-field>
+    <mat-form-field>
+      <mat-label>Business Id</mat-label>
+      <input
+        type="number"
+        matInput
+        placeholder="1000"
+        name="businessId"
+        formControlName="businessId"
+    /></mat-form-field>
+    <ng-container>
+      <button mat-button color="warn" (click)="cancelAdd()">Cancel</button>
+      <button mat-button color="primary" (click)="onSubmit()">Save</button
+      >&nbsp;
+    </ng-container>
+  </form>
+</div>

@@ -12,7 +12,7 @@ import { OffersRoutingModule } from './offers-routing.module';
 import { MaterialModule } from 'src/app/shared/material.module';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,14 +21,15 @@ import { FormsModule } from '@angular/forms';
     OffersFormComponent,
     ListOffersComponent,
     NewOfferComponent,
-    EditOfferComponent
+    EditOfferComponent,
   ],
   imports: [
     CommonModule,
     OffersRoutingModule,
     MaterialModule,
     HttpClientModule,
-    FormsModule
-  ]
+    FormsModule,
+    ReactiveFormsModule,
+  ],
 })
-export class OffersModule { }
+export class OffersModule {}
