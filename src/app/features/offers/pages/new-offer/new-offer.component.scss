@@ -1,5 +1,4 @@
 .center {
-  margin-top: 2rem;
   display: flex;
   justify-content: center;
 }
@@ -8,4 +7,14 @@ form {
   display: flex;
   flex-direction: column;
   width: 30rem;
+  margin-top: 2rem;
+}
+
+.btns {
+  display: flex;
+  flex-direction: row;
+}
+
+button {
+  width: 10rem;
 }
