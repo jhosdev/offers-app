@@ -1,13 +1,6 @@
 {
   "offers": [
     {
-      "id": 1,
-      "title": "Project A",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "points": 100,
-      "businessId": 1234
-    },
-    {
       "id": 2,
       "title": "Project B",
       "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
