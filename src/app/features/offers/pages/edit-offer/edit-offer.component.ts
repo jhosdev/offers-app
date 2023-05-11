@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 import { Observable } from 'rxjs';
 import { switchMap } from 'rxjs/operators';
@@ -11,7 +11,7 @@ import { OfferService } from '../../services/offer.service';
   templateUrl: './edit-offer.component.html',
   styleUrls: ['./edit-offer.component.scss']
 })
-export class EditOfferComponent implements OnInit {
+export class EditOfferComponent {
   offer$!: Observable<Offer>;
 
   constructor(
@@ -28,10 +28,15 @@ export class EditOfferComponent implements OnInit {
     );
   }
 
+
   //TODO: Actualizar el objeto y agregar campos faltantes
 
   gotoOffers(offer: Offer) {
     const offerId = offer ? offer.id : null;
+
+
+    this.service.updateOffer(offerId!,offer).subscribe(res => console.log(res));
+
     // Pass along the offer id if available
     // so that the OfferList component can select that offer.
     // Include a junk 'foo' property for fun.

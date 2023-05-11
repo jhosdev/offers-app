@@ -62,17 +62,17 @@
 
   <div>
     <h3>
-      Click Log
+      Historial de Ofertas Editadas: (Feature Adicional)
     </h3>
   </div>
   
   <div *ngIf="!clickedRows.size">
-    Clicked rows will be logged here
+    Las ofertas seleccionadas apareceran aqui:
   </div>
   
   <ul>
     <li *ngFor="let clickedRow of clickedRows">
-      Clicked on {{clickedRow.title}}
+      Hizo click en Oferta: {{clickedRow.title}}
     </li>
   </ul>
   

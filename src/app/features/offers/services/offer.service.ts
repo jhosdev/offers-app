@@ -74,7 +74,6 @@ export class OfferService {
   updateOffer(id: number,offer: Offer): Observable<Offer> {
     //TODO: Add Auth
     //httpOptions.headers = httpOptions.headers.set('Authorization', 'my-new-auth-token');
-
     const url = `${this.baseURL}/${id}`; // PUT api/offers/32
     return this.http.put<Offer>(url, offer, this.httpOptions)//test: JSON.stringify(offer)
       .pipe(
